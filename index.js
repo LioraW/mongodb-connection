@@ -14,7 +14,5 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(removePoweredBy)
 
-console.log("hello")
-
 
 module.exports = app

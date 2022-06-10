@@ -12,12 +12,11 @@ const postRoutes = require('./routes/posts')
 app.use('/posts', postRoutes)
 
 
-
 //Connect to DB
 mongoose.connect(process.env.DB_CONNECTION,
         () => console.log('connected to db') 
 )
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`App listening at http://localhost:${port}`)
 })
